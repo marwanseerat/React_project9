@@ -88,6 +88,12 @@ function Navbar() {
         </a>
         </Link>
 
+        <Link to='/Post'>
+        <a href="courses.html" className="nav-item nav-link">
+          Post
+        </a>
+        </Link>
+
         <div className="nav-item dropdown">
           <a
             href="#"

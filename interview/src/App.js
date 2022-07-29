@@ -5,6 +5,7 @@ import About from './component/About/About'
 import Contact from './component/Contact/Contact'
 import Courses from './component/Courses/Courses'
 import Home from './component/Home/Home';
+import Post from './Post';
 
 
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/About" element={<About />}/>
         <Route path="/Contact" element={<Contact />}/>
         <Route path="/Courses" element={<Courses />}/>
+        <Route path="/post" element={<Post />}/>
       </Routes>
     </BrowserRouter>
     <Footer/>
