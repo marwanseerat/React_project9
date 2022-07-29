@@ -1,5 +1,4 @@
 import {Routes,BrowserRouter, Route,Link} from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './component/Footer';
 import Navbar from './component/Navbar';
 import About from './About'
