@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "../style.css"
 function Courses() {
   return (
     <div>

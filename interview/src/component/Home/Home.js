@@ -1,9 +1,9 @@
 import React from 'react'
-import "./style.css"
-import Service from './component/Service'
-import Testimonial from './component/Testimonial'
-import PopularCourses from './component/PopularCourses'
-import Category from './component/Category'
+import "../style.css"
+import Service from './Service'
+import Testimonial from './Testimonial'
+import PopularCourses from './PopularCourses'
+import Category from './Category'
 
 
 

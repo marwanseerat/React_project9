@@ -1,10 +1,10 @@
 import {Routes,BrowserRouter, Route,Link} from "react-router-dom";
 import Footer from './component/Footer';
 import Navbar from './component/Navbar';
-import About from './About'
-import Contact from './Contact'
-import Courses from './Courses'
-import Home from './Home';
+import About from './component/About/About'
+import Contact from './component/Contact/Contact'
+import Courses from './component/Courses/Courses'
+import Home from './component/Home/Home';
 
 
 
