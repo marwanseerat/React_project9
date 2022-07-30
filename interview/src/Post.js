@@ -19,7 +19,7 @@ class Post extends React.Component {
 
 
       handleFormSubmit( event ) {
-        event.preventDefault();
+        // event.preventDefault();
         let formData = new FormData();
         formData.append('category', this.state.category)
         formData.append('topic_title', this.state.topic_title)
@@ -50,7 +50,7 @@ class Post extends React.Component {
       <h1>Create post</h1>
       <form action="" >
         <div className="form-group has-error">
-        <select className="form-select" aria-label="Default select example " name='category' value={this.state.category} onChange={e => this.setState({  category: e.target.value })}>
+        <select className="form-select" aria-label="Default select example " name='category'  value={this.state.category} onChange={e => this.setState({  category: e.target.value })}>
         <option selected="">category</option>
         <option >Back-end</option>
         <option >Front-end</option>
@@ -62,7 +62,7 @@ class Post extends React.Component {
           <label htmlFor="title">
             Title <span className="require">*</span>
           </label>
-          <input type="text" className="form-control" name="topic_title" value={this.state.topic_title} onChange={e => this.setState({  topic_title: e.target.value })} />
+          <input type="text" className="form-control" name="topic_title"  value={this.state. topic_title} onChange={e => this.setState({  topic_title: e.target.value })} />
         </div>
         <div className="form-group">
           <label htmlFor="description">Description</label>
@@ -70,8 +70,7 @@ class Post extends React.Component {
             rows={5}
             className="form-control"
             name="topic"
-    
-            value={this.state. topic} onChange={e => this.setState({  topic: e.target.value })}
+            value={this.state.topic}  onChange={e => this.setState({  topic: e.target.value })}
           />
         </div>
         <div className="form-group">
@@ -80,7 +79,7 @@ class Post extends React.Component {
           </p>
         </div>
         <div className="form-group">
-          <button type="submit" className="btn btn-primary" >
+          <button type="submit" className="btn btn-primary" onClick={e => this.handleFormSubmit(e)} >
             Create
           </button>
           <button className="btn btn-default">Cancel</button>
